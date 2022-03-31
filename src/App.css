@@ -17,6 +17,12 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.Routes-Wrapper{
+  margin-top: calc(116px/1.5);
 }
 
 .app__headerLogo{
