@@ -11,10 +11,10 @@ function Header() {
     <header>
       <img className='header__logo' onClick={() => navigate('/', { replace: true })} />
       <div className="header__btns">
-        <Link to="/" className={path === '/' ? 'active' : ''} >Home</Link>
-        <Link to="/work" className={path.startsWith('/work') ? 'active' : ''}>Work</Link>
-        <Link to="/profile" className={path === '/profile' ? 'active' : ''}>Profile</Link>
-        <Link to="/contact" className={path === '/contact' ? 'active' : ''}>Contact</Link>
+        <Link to="/" className={path === '/' ? 'active' : ''} >HOME</Link>
+        <Link to="/work" className={path.startsWith('/work') ? 'active' : ''}>WORK</Link>
+        <Link to="/profile" className={path === '/profile' ? 'active' : ''}>PROFILE</Link>
+        <Link to="/contact" className={path === '/contact' ? 'active' : ''}>CONTACT</Link>
       </div>
     </header>
   )

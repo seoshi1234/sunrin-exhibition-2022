@@ -13,11 +13,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="Routes-Wrapper">
+      <div className="app_header-box" />
         <Routes>        
           <Route path='/' element={<Home />}/>
-        </Routes>
-      </div>
+      </Routes>
+      <div className="app_footer-box" />
       <Footer />
     </div>
   );
