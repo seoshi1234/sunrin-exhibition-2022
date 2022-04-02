@@ -1,0 +1,66 @@
+@font-face {
+	font-family: 'NanumBarunGothic';
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+	font-style: normal;
+	font-style: normal;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: calc(390px / 1.5);
+	padding: calc(66px / 1.5) 0px;
+	box-sizing: border-box;
+	background-color: #e7edfd;
+}
+
+footer>div:first-child {
+	margin-right: 17.865vw;
+}
+
+footer>div:not(:first-child) {
+	text-align: right;
+	margin-left: calc(38px / 1.5);
+}
+
+.footer__section-title {
+	font-family: NanumBarunGothic;
+	font-size: calc(18px / 1.5);
+	font-weight: bold;
+	color: #131313;
+}
+
+.footer__section-desc {
+	margin-top: calc(40px / 1.5);
+	font-family: NanumBarunGothic;
+	font-size: calc(18px / 1.5);
+	color: #131313;
+}
+
+.footer__btns-wrapper {
+	margin-top: calc(40px / 1.5);
+}
+
+.footer__btns {
+	width: calc(52px / 1.5);
+	height: calc(52px / 1.5);
+	padding: calc(12px / 1.5);
+	margin: 0 calc(1.666vw / 2);
+	border-radius: calc(52px / 1.5 / 2);
+	box-shadow: 0 2px 6px 0 rgba(124, 124, 124, 0.46);
+	background-color: #fff;
+}
+
+.footer__btns:last-child {
+	margin-right: 0;
+}
+
+.footer__btns>img {
+	position: relative;
+	top: 2px;
+	width: calc(28px / 1.5);
+	height: calc(28px / 1.5);
+}
