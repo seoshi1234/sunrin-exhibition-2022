@@ -10,7 +10,8 @@
 }
 
 .home__section{
-  width: calc(582px / 1.5);
+  position: relative;
+  left: 70px;
   height: 393px;
   display: inline-block;
 }
@@ -32,8 +33,9 @@
 
 .home__image{
   display: inline-block;
+  overflow: hidden;
   position: relative;
-  margin-left: 18px;
+  left : 30px;
 }
 
 .home__image > img{
