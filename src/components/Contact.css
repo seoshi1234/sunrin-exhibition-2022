@@ -1,7 +1,16 @@
 .contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url('../assets/ContactBackground.png');
   background-size: cover;
   height: calc(100vh - 390px / 1.5);
+}
+
+.contact > div {
+  display: inline-block;
+  position: relative;
+  bottom : 75px;
 }
 
 .contact__image{
