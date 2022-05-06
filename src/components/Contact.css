@@ -1,0 +1,33 @@
+.contact{
+  background-image: url('../assets/ContactBackground.png');
+  background-size: cover;
+  height: calc(100vh - 390px / 1.5);
+}
+
+.contact__image{
+  display: flex;
+  justify-content: center;
+}
+
+.contact__image > img{
+  width: calc(692px / 1.5);
+  height: calc(692px / 1.5);
+}
+
+.contact__title {
+  font-family: 'GmarketSans';
+  font-size: calc(50px / 1.5);
+  text-align: center;
+  color: #4263f6;
+}
+
+.contact__desc{
+  font-family: 'GmarketSans';
+  font-size: calc(26px / 1.5);
+  text-align: center;
+  color: #131313;
+}
+
+.contact__desc-accent{
+  font-size: calc(32px / 1.5);
+}

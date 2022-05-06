@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../assets/HomeImage.png';
+import Image from '../assets/MainImage.png';
 import Icon1 from '../assets/HomeWorkIcon.png';
 import Icon2 from '../assets/HomeVideoIcon.png';
 import { Link } from 'react-router-dom';
@@ -8,6 +8,7 @@ import './Home.css';
 function Home() {
   return (
     <div className="home">
+      <div>
       <div className="home__section-wrapper">
         <div className="home__section">
           <p className="home__section-title">
@@ -34,6 +35,7 @@ function Home() {
         </div>
         <div className="home__btns">
           <a href="https://youtube.com">메인 티저 영상 보러가기<img src={Icon2} /></a>
+        </div>
         </div>
       </div>
     </div>
