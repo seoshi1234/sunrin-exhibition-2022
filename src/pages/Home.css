@@ -18,6 +18,7 @@
 
 .home__section{
   position: relative;
+  top : 75px;
   height: 393px;
   display: inline-block;
 }
@@ -54,7 +55,6 @@
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  bottom: 75px
 }
 
 .home__btns{
