@@ -1,0 +1,13 @@
+.profile{
+  display: flex;
+  align-items: center;  
+  flex-direction: column;
+}
+
+.profile__section{
+  display: flex;    
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: calc(1225px / 1.5);   
+  margin-bottom: calc(185px / 1.5);  
+}

@@ -1,0 +1,82 @@
+.sidebar {  
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;    
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.3s ease-in-out 0s ;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+}
+.sidebar.active{
+  pointer-events: all;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.sidebar-container{
+  position:relative;
+  left:-265px;
+  z-index: 100;
+  width:265px;
+  height:100vh;
+  opacity: 100%;
+  background: white;
+  transition: left .3s ease-in-out 0s ;
+}
+
+.sidebar.active .sidebar-container{
+  left:0;
+}
+
+.sidebar__logo {
+  width: 124px;
+  height: 61px;
+  margin-left: 28px;
+  margin-top: 14px;
+  content: url("../assets/HeaderLogo.png");
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.sidebar__btns {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.sidebar__btns a.active {
+  color: #4263f6;
+}
+
+.sidebar__btns a {
+  margin-left: 28px;
+  margin-top:28px;
+  font-family: "GmarketSansBold";
+  font-size: 14px;
+  color: #cddafc;
+  text-decoration: none;
+}
+
+.sidebar__icons-wrapper {
+	position:absolute;
+  bottom:84.1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width:100%;
+}
+
+.sidebar__icons {
+	width: 37.4px;
+	height:37.4px;	  
+	border-radius: 52px;
+	box-shadow: 0 2px 6px 0 rgba(124, 124, 124, 0.46);
+	background-color: #fff;
+}
+
+.sidebar__icons>img {
+	vertical-align: bottom;
+	width:20px;
+  height:20px;
+  padding:9px;
+}

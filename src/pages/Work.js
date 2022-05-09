@@ -15,28 +15,28 @@ function Work(props) {
   const filterTag = (curTag) => {
     switch (curTag) {
       case '3D':
-        setData(props.data.filter((d) => d.tag.indexOf('3D') > -1));
+        setData(props.data.filter((d) => d.tag.includes('3D')));
         break;
       case 'VIDEO':
-        setData(props.data.filter((d) => d.tag.indexOf('VIDEO') > -1));
+        setData(props.data.filter((d) => d.tag.includes('VIDEO')));
         break;
       case 'MOTION':
-        setData(props.data.filter((d) => d.tag.indexOf('MOTION') > -1));
+        setData(props.data.filter((d) => d.tag.includes('MOTION')));
         break;
       case 'UI/UX':
-        setData(props.data.filter((d) => d.tag.indexOf('UI/UX') > -1));
+        setData(props.data.filter((d) => d.tag.includes('UI/UX')));
         break;
       case 'GRAPHIC':
-        setData(props.data.filter((d) => d.tag.indexOf('GRAPHIC') > -1));
+        setData(props.data.filter((d) => d.tag.includes('GRAPHIC')));
         break;
       case 'BRANDING':
-        setData(props.data.filter((d) => d.tag.indexOf('BRANDING') > -1));
+        setData(props.data.filter((d) => d.tag.includes('BRANDING')));
         break;
       case 'ILLUSTRATION':
-        setData(props.data.filter((d) => d.tag.indexOf('ILLUSTRATION') > -1));
+        setData(props.data.filter((d) => d.tag.includes('ILLUSTRATION')));
         break;
       case 'PRODUCT':
-        setData(props.data.filter((d) => d.tag.indexOf('PRODUCT') > -1));
+        setData(props.data.filter((d) => d.tag.includes('PRODUCT')));
         break;
       default:
         setData(props.data);
@@ -60,18 +60,18 @@ function Work(props) {
       <div /> {/* 태그 및에 있는 라인 */}
       <div className="work__section">
         {
-          Object.values(data).map(d =>
-            <WorkItem imageURL={d.imageURL} title={d.title} author={d.author} />
+          Object.values(data).map((d,i) =>
+            <WorkItem key={i} imageURL={d.imageURL} title={d.title} author={d.author} />
           )
         }
         {
-          Object.values(data).map(d =>
-            <WorkItem imageURL={d.imageURL} title={d.title} author={d.author} />
+          Object.values(data).map((d,i) =>
+            <WorkItem key={i} imageURL={d.imageURL} title={d.title} author={d.author} />
           )
         }
         {
-          Object.values(data).map(d =>
-            <WorkItem imageURL={d.imageURL} title={d.title} author={d.author} />
+          Object.values(data).map((d,i) =>
+            <WorkItem key={i} imageURL={d.imageURL} title={d.title} author={d.author} />
           )
         }
       </div>

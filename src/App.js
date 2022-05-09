@@ -8,6 +8,7 @@ import Contact from './pages/Contact.js';
 import Work from './pages/Work.js';
 import WorkDetail from './pages/WorkDetail';
 import { useEffect } from 'react';
+import Profile from './pages/Profile';
 
 
 function App(props) {
@@ -21,6 +22,7 @@ function App(props) {
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/work' element={<Work data={props.data}/>} />
         <Route exact path='/work/:title' element={<WorkDetail data={props.data}/>} />
+        <Route exact path='/profile' element={<Profile data={props.profileData}/>}></Route>
       </Routes>
       <div className="app_footer-box" />
       <Footer />

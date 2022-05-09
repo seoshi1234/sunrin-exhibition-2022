@@ -1,15 +1,15 @@
 .work{
   display: flex;
-  align-items: center;
+  align-items: center;  
   flex-direction: column;
 }
 
 .work__section{
-  display: flex;
+  display: flex;    
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: calc(1225px / 1.5);
-  margin-bottom: calc(185px / 1.5);
+  max-width: calc(1225px / 1.5);   
+  margin-bottom: calc(185px / 1.5);  
 }
 
 .work__menu{

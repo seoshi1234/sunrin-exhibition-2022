@@ -77,5 +77,26 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  header {    
+    height: 78px;    
+  }
   
+  .header__logo {
+    width: 124px;
+    height: 61px;
+    margin: 0 auto;        
+  }  
+  .header__btns {    
+    display: none;
+  }
+
+  .header__open-menu{
+    width:17px;
+    cursor:pointer;
+    height: 14px;
+    position: absolute;
+    content:url('../assets/Hamburger.svg');
+    top:32px;
+    left:36px;
+  }
 }
