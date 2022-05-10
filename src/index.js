@@ -17,7 +17,7 @@ const profileInfo = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename='/2022/'>
+    <BrowserRouter basename='/'>
       <App data={workInfo} profileData={profileInfo}/>
     </BrowserRouter>
   </React.StrictMode>,
