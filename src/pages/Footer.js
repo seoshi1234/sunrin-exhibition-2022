@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Footer.css';
 import Facebook from '../assets/FooterFacebookIcon.png';
 import Instagram from '../assets/FooterInstagramIcon.png';
@@ -7,6 +7,28 @@ import Youtube from '../assets/FooterYoutubeIcon.png';
 
 
 function Footer() {
+
+  let mobileMatch;
+  const [isMobile,setIsMobile]=useState(false)
+  mobileMatch = window.matchMedia('screen and (max-width:768px)');
+
+  const changeStructure = (mobileMatch)=>{
+    if(mobileMatch.matches){
+      setIsMobile(true)
+    }else{
+      setIsMobile(false);
+    }
+  }
+
+  useEffect(()=>{
+    if(mobileMatch.matches){
+      setIsMobile(true)
+    }else{
+      setIsMobile(false);
+    }
+  })
+
+
   return (
     <footer>
       <div>
@@ -22,38 +44,78 @@ function Footer() {
           All Rights Reserved.
         </p>
       </div>
-      <div>
-        <p className="footer__section-title">
-          웹사이트
-        </p>
-        <p className="footer__section-desc">
-          디자인  |  김고은 김유진 최지안 <br />
-          개발  |  최지원 정진오
-        </p>
-      </div>
-      <div>
-        <p className="footer__section-title">졸업전시회준비위원회</p>
-        <p className="footer__section-desc">
-          김고은 김유라 김유진 김민주 김유한 <br />
-          김혜린 서도담 신상호 안서연 윤서영 <br />
-          윤서현 윤지민 이성민 이예강 임동하 <br />
-          전계승 조승현 최지안
-        </p>
-        <div className="footer__btns-wrapper">
-          <a className="footer__btns" href="">
-            <img src={Sunrin} />
-          </a>
-          <a className="footer__btns" href="">
-            <img src={Facebook} />
-          </a>
-          <a className="footer__btns" href="">
-            <img src={Youtube} />
-          </a>
-          <a className="footer__btns" href="">
-            <img src={Instagram} />
-          </a>
-        </div>
-      </div>
+      {
+        isMobile?
+        <>
+          <div >
+            <p className="footer__section-title">졸업전시회준비위원회</p>
+            <p className="footer__section-desc">
+              김고은 김유라 김유진 김민주 김유한 <br />
+              김혜린 서도담 신상호 안서연 윤서영 <br />
+              윤서현 윤지민 이성민 이예강 임동하 <br />
+              전계승 조승현 최지안
+            </p>
+          </div>
+          <div >
+            <p className="footer__section-title">
+              웹사이트
+            </p>
+            <p className="footer__section-desc">
+              디자인  |  김고은 김유진 최지안 <br />
+              개발  |  최지원 정진오
+            </p>
+            <div className="footer__btns-wrapper">
+              <a className="footer__btns" href="">
+                <img src={Sunrin} />
+              </a>
+              <a className="footer__btns" href="">
+                <img src={Facebook} />
+              </a>
+              <a className="footer__btns" href="">
+                <img src={Youtube} />
+              </a>
+              <a className="footer__btns" href="">
+                <img src={Instagram} />
+              </a>
+            </div>
+          </div>
+        </>
+        :
+        <>
+          <div >
+            <p className="footer__section-title">
+              웹사이트
+            </p>
+            <p className="footer__section-desc">
+              디자인  |  김고은 김유진 최지안 <br />
+              개발  |  최지원 정진오
+            </p>
+          </div>
+          <div >
+            <p className="footer__section-title">졸업전시회준비위원회</p>
+            <p className="footer__section-desc">
+              김고은 김유라 김유진 김민주 김유한 <br />
+              김혜린 서도담 신상호 안서연 윤서영 <br />
+              윤서현 윤지민 이성민 이예강 임동하 <br />
+              전계승 조승현 최지안
+            </p>
+            <div className="footer__btns-wrapper">
+              <a className="footer__btns" href="">
+                <img src={Sunrin} />
+              </a>
+              <a className="footer__btns" href="">
+                <img src={Facebook} />
+              </a>
+              <a className="footer__btns" href="">
+                <img src={Youtube} />
+              </a>
+              <a className="footer__btns" href="">
+                <img src={Instagram} />
+              </a>
+            </div>
+          </div>
+        </>
+      }      
     </footer>
   )
 }

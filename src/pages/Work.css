@@ -5,18 +5,21 @@
 }
 
 .work__section{
-  display: flex;    
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: calc(1225px / 1.5);   
-  margin-bottom: calc(185px / 1.5);  
+  display: grid;    
+  grid-template-columns: repeat(auto-fit,minmax(calc(276px / 1),max-content));
+  grid-gap: 30px;  
+  justify-content: center;
+  max-width: 78vw;   
+  margin-top:72px;
+  margin-bottom: calc(185px / 1);
+  padding:initial  
 }
 
 .work__menu{
   display: flex;
   justify-content: space-around;
-  margin-top: calc(84px / 1.5);
-  width: calc(1200px / 1.5);
+  margin-top: calc(84px / 1);
+  width: calc(1200px / 1);
 }
 
 .work__menu + div{
@@ -28,9 +31,9 @@
 
 .work__menu-tag{
   font-family: GmarketSans;
-  font-size: calc(17px / 1.5);
+  font-size: calc(17px / 1);
   font-weight: bold;
-  padding :  calc(12px / 1.5) calc(16px / 1.5) calc(16px / 1.5) calc(16px / 1.5);
+  padding :  calc(12px / 1) calc(16px / 1) calc(16px / 1) calc(16px / 1.25);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background-color: #cddafc;
@@ -40,4 +43,75 @@
 
 .selected{
   background-color: #4263f6;
+}
+@media screen and (max-width:1536px) {
+  .work{
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+  }
+  
+  .work__section{
+    display: grid;    
+    grid-template-columns: repeat(auto-fit,minmax(calc(276px / 1.25),max-content));
+    grid-gap: 30px;  
+    justify-content: center;
+    max-width: 75vw;   
+    margin-top:72px;
+    margin-bottom: calc(185px / 1.25);
+    padding:initial  
+  }
+  
+  .work__menu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: calc(84px / 1.25);
+    width: calc(1200px / 1.25);
+  }
+  
+  .work__menu + div{
+    content: '';
+    width: 100vw;
+    height: 2px;
+    background-color: #cddafc;
+  }
+  
+  .work__menu-tag{
+    font-family: GmarketSans;
+    font-size: calc(17px / 1.25);
+    font-weight: bold;
+    padding :  calc(12px / 1.25) calc(16px / 1.25) calc(16px / 1.25) calc(16px / 1.25);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #cddafc;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .selected{
+    background-color: #4263f6;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .work__section{
+    margin-top: 44px;
+    max-width: 80vw;
+    grid-gap:45px;
+    grid-template-columns: repeat(auto-fit,minmax(32vw,max-content));
+  }
+  .work__menu{
+    margin-top: 35px;
+    width:85vw;    
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .work__menu-tag{
+    margin: 5px 3px;
+    border-radius: 17px;    
+    font-size: 11px;
+  }
+  .work__menu + div{
+    display: none;
+  }
 }

@@ -1,8 +1,9 @@
 .home{
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 390px / 1.5);
+  min-height: calc(100vh - 390px / 1);
 }
 
 .home > div {
@@ -24,9 +25,9 @@
 }
 
 .home__section-title{
-  height: calc(114px / 1.5);
+  height: calc(114px / 1);
   font-family: 'GmarketSans';
-  font-size: calc(38px / 1.5);
+  font-size: calc(38px / 1);
   font-weight: 500;
   line-height: 1.5em;
   color: #4263f6;
@@ -34,20 +35,19 @@
 
 .home__section-desc{
   font-family: 'NanumBarunGothic';
-  margin-top: calc(73px / 1.5);
+  margin-top: calc(73px / 1);
   line-height: 1.5em;
 }
 
 .home__image{
   display: inline-block;
   overflow: hidden;
-  position: relative;
-  bottom: 50px;
+  
 }
 
 .home__image > img{
-  width: calc(692px / 1.5);
-  height: calc(692px / 1.5);
+  width: calc(692px / 1);
+  height: calc(692px / 1);
 }
 
 .home__btns-wrapper{
@@ -63,15 +63,15 @@
   align-items: center;
   background-color: #142677;
   border-radius: 25px;
-  width: calc(552px / 1.5);
-  height: calc(73px / 1.5);
-  margin: 0 30px 30px 30px;
+  width: calc(552px / 1);
+  height: calc(73px / 1);
+  margin: 0 30px calc(220px/1) 30px;
 }
 
 .home__btns > a{
   width: inherit;
   height: inherit;
-  line-height: calc(73px / 1.5);
+  line-height: calc(73px / 1);
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -80,7 +80,160 @@
 .home__btns > a > img{
   position: relative;
   top: 2px;
-  width: calc(31px / 1.5);
-  height: calc(25px / 1.5);
+  width: calc(31px / 1);
+  height: calc(25px / 1);
   margin-left: 16px;
+}
+
+@media screen and (max-width:1536px) {
+  .home{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 390px / 1.25);
+  }
+  
+  .home > div {
+    display: inline-block;
+  }
+  
+  .home__section-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .home__section{
+    position: relative;
+    top : 75px;
+    height: 393px;
+    display: inline-block;
+  }
+  
+  .home__section-title{
+    height: calc(114px / 1.25);
+    font-family: 'GmarketSans';
+    font-size: calc(38px / 1.25);
+    font-weight: 500;
+    line-height: 1.5em;
+    color: #4263f6;
+  }
+  
+  .home__section-desc{
+    font-family: 'NanumBarunGothic';
+    margin-top: calc(73px / 1.25);
+    line-height: 1.5em;
+  }
+  
+  .home__image{
+    display: inline-block;
+    overflow: hidden;
+    
+  }
+  
+  .home__image > img{
+    width: calc(692px / 1.25);
+    height: calc(692px / 1.25);
+  }
+  
+  .home__btns-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .home__btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #142677;
+    border-radius: 25px;
+    width: calc(552px / 1.25);
+    height: calc(73px / 1.25);
+    margin: 0 30px calc(220px/1.25) 30px;
+  }
+  
+  .home__btns > a{
+    width: inherit;
+    height: inherit;
+    line-height: calc(73px / 1.25);
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .home__btns > a > img{
+    position: relative;
+    top: 2px;
+    width: calc(31px / 1.25);
+    height: calc(25px / 1.25);
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__image{
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  .home__image > img{
+    width: 285px;
+    height: 285px;
+    
+  }
+  .home__section-title{      
+    font-size: 19px;
+  }
+  .home__section{
+    width:259px;
+    font-size: 19px;
+    top:0;    
+    height:269px;
+  }
+  .home__section-wrapper{
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: center;
+  }
+  .home__section-desc{
+    font-size: 15px;
+    margin-top: 18px;
+    text-align: center;
+  }
+  .home__btns-wrapper{
+    width:237px;
+    margin-bottom: 38px;
+  }
+  .home>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .home__btns{
+    width:237px;
+    height: 34px;
+    margin-bottom: 17px;
+    
+  }
+  .home__btns > a{
+    width: inherit;
+    height: inherit;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .home__btns > a > img{
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 13px;
+    margin-left: 16px;
+  }
 }

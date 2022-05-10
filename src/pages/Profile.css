@@ -5,9 +5,31 @@
 }
 
 .profile__section{
-  display: flex;    
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: calc(1225px / 1.5);   
-  margin-bottom: calc(185px / 1.5);  
+  display: grid;    
+  grid-template-columns: repeat(auto-fit,minmax(calc(276px / 1),max-content));
+  grid-gap: 30px;  
+  justify-content: center;
+  max-width: 70vw;   
+  margin-top:72px;
+  margin-bottom: calc(185px / 1);
+  padding:initial  
+}
+@media screen and (max-width:1536px) {
+  .profile__section{
+    display: grid;    
+    grid-template-columns: repeat(auto-fit,minmax(calc(276px / 1.25),max-content));
+    grid-gap: 30px;  
+    justify-content: center;
+    max-width: 70vw;   
+    margin-top:72px;
+    margin-bottom: calc(185px / 1.25);
+    padding:initial  
+  }
+}
+@media screen and (max-width:768px) {
+  .profile__section{
+    margin-top: 54px;
+    max-width: 76vw;
+    grid-template-columns: repeat(auto-fit,minmax(32vw,max-content));
+  }
 }

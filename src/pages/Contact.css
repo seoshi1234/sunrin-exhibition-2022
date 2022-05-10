@@ -4,7 +4,8 @@
   justify-content: center;
   background-image: url('../assets/ContactBackground.png');
   background-size: cover;
-  min-height: calc(100vh - 390px / 1.5);
+  background-position: center;
+  min-height: calc(100vh - 390px / 1);
 }
 
 .contact > div {
@@ -19,24 +20,94 @@
 }
 
 .contact__image > img{
-  width: calc(692px / 1.5);
-  height: calc(692px / 1.5);
+  width: calc(692px / 1);
+  height: calc(692px / 1);
 }
 
 .contact__title {
   font-family: 'GmarketSans';
-  font-size: calc(50px / 1.5);
+  font-size: calc(50px / 1);
   text-align: center;
   color: #4263f6;
 }
 
 .contact__desc{
   font-family: 'GmarketSans';
-  font-size: calc(26px / 1.5);
+  font-size: calc(26px / 1);
   text-align: center;
   color: #131313;
 }
 
 .contact__desc-accent{
-  font-size: calc(32px / 1.5);
+  font-size: calc(32px / 1);
+}
+
+@media screen and (max-width:1536px) {
+  .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/ContactBackground.png');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 390px / 1.25);
+  }
+  
+  .contact > div {
+    display: inline-block;
+    position: relative;
+    bottom : 75px;
+  }
+  
+  .contact__image{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact__image > img{
+    width: calc(692px / 1.25);
+    height: calc(692px / 1.25);
+  }
+  
+  .contact__title {
+    font-family: 'GmarketSans';
+    font-size: calc(50px / 1.25);
+    text-align: center;
+    color: #4263f6;
+  }
+  
+  .contact__desc{
+    font-family: 'GmarketSans';
+    font-size: calc(26px / 1.25);
+    text-align: center;
+    color: #131313;
+  }
+  
+  .contact__desc-accent{
+    font-size: calc(32px / 1.25);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .contact{
+    height:563px
+  }
+  .contact__image{
+    margin-top: 70px;
+  }
+  .contact__image>img{
+    width:230px;
+    height:230px;    
+  }
+  .contact__title{
+    margin-top: 16px;
+    font-size: 21px;
+  }
+  .contact__desc{
+    margin-top: 26px;
+    font-size: 12px;
+  }
+  .contact__desc-accent{
+    font-size: 19px;
+  }
 }
