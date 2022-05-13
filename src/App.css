@@ -45,6 +45,10 @@ html{
   width:100vw;
 }
 
+b {
+  font-family: 'GmarketSansBold';
+}
+
 .App {
   min-height: 100vh;
   position: relative;
@@ -54,7 +58,7 @@ html{
 .app_header-box {
   content: '';
   width: 100%;
-  height: calc(116px / 1);
+  height: calc(96px / 1);
 }
 
 .app_footer-box {
@@ -66,7 +70,7 @@ html{
   .app_header-box {
     content: '';
     width: 100%;
-    height: calc(116px / 1.25);
+    height: calc(96px / 1.25);
   }
   
   .app_footer-box {

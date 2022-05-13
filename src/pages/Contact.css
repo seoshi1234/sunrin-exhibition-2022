@@ -5,13 +5,12 @@
   background-image: url('../assets/ContactBackground.png');
   background-size: cover;
   background-position: center;
-  min-height: calc(100vh - 390px / 1);
 }
 
 .contact > div {
   display: inline-block;
   position: relative;
-  bottom : 75px;
+  bottom : 96px;
 }
 
 .contact__image{
@@ -36,9 +35,11 @@
   font-size: calc(26px / 1);
   text-align: center;
   color: #131313;
+  
 }
 
 .contact__desc-accent{
+  font-family: 'GmarketSansBold';
   font-size: calc(32px / 1);
 }
 

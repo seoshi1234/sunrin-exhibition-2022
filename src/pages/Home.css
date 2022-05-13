@@ -19,9 +19,8 @@
 
 .home__section{
   position: relative;
-  top : 75px;
-  height: 393px;
   display: inline-block;
+  margin: auto 0;
 }
 
 .home__section-title{
@@ -35,6 +34,7 @@
 
 .home__section-desc{
   font-family: 'NanumBarunGothic';
+  font-size: 24px;
   margin-top: calc(73px / 1);
   line-height: 1.5em;
 }
@@ -52,7 +52,6 @@
 
 .home__btns-wrapper{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   position: relative;
 }
@@ -74,6 +73,9 @@
   line-height: calc(73px / 1);
   text-align: center;
   text-decoration: none;
+  font-size: 24px;
+  font-family: 'NanumBarunGothic';
+  font-weight: bold;
   color: #ffffff;
 }
 
@@ -102,13 +104,12 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap;
   }
   
   .home__section{
     position: relative;
-    top : 75px;
-    height: 393px;
+    top : 0px;
     display: inline-block;
   }
   
@@ -140,7 +141,6 @@
   
   .home__btns-wrapper{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     position: relative;
   }
@@ -160,6 +160,7 @@
     width: inherit;
     height: inherit;
     line-height: calc(73px / 1.25);
+    font-size: calc(24px / 1.25);
     text-align: center;
     text-decoration: none;
     color: #ffffff;
@@ -206,6 +207,7 @@
   .home__btns-wrapper{
     width:237px;
     margin-bottom: 38px;
+    flex-wrap: wrap;
   }
   .home>div{
     display: flex;
@@ -217,7 +219,6 @@
     width:237px;
     height: 34px;
     margin-bottom: 17px;
-    
   }
   .home__btns > a{
     width: inherit;
