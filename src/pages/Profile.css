@@ -6,12 +6,12 @@
 
 .profile__section{
   display: grid;    
-  grid-template-columns: repeat(auto-fit,minmax(calc(276px / 1),max-content));
+  grid-template-columns: repeat(auto-fit,minmax(calc(276px / 1.1),max-content));
   grid-gap: 30px;  
   justify-content: center;
   max-width: 70vw;   
   margin-top:72px;
-  margin-bottom: calc(185px / 1);
+  margin-bottom: calc(185px / 1.1);
   padding:initial  
 }
 @media screen and (max-width:1536px) {

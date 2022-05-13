@@ -5,8 +5,8 @@ footer {
 	width: 100%;
 	left: 0;
 	bottom: 0;
-	height: calc(390px / 1);
-	padding: calc(66px / 1) 0px;
+	height: calc(390px / 1.1);
+	padding: calc(66px / 1.1) 0px;
 	box-sizing: border-box;
 	background-color: #e7edfd;
 }
@@ -17,32 +17,32 @@ footer>div:first-child {
 
 footer>div:not(:first-child) {
 	text-align: right;
-	margin-left: calc(38px / 1);
+	margin-left: calc(38px / 1.1);
 }
 
 .footer__section-title {
 	font-family: NanumBarunGothic;
-	font-size: calc(18px / 1);
+	font-size: calc(18px / 1.1);
 	font-weight: bold;
 	color: #131313;
 }
 
 .footer__section-desc {
-	margin-top: calc(40px / 1);
+	margin-top: calc(40px / 1.1);
 	font-family: NanumBarunGothic;
-	font-size: calc(18px / 1);
+	font-size: calc(18px / 1.1);
 	color: #131313;
 	line-height: 1.5em;
 }
 
 .footer__btns-wrapper {
-	margin-top: calc(40px / 1);
+	margin-top: calc(40px / 1.1);
 }
 
 .footer__btns {
-	width: calc(52px / 1);
-	height: calc(52px / 1);
-	padding: 15.5px calc(12px / 1);
+	width: calc(52px / 1.1);
+	height: calc(52px / 1.1);
+	padding: 15.5px calc(12px / 1.1);
 	margin: 0 calc(1.666vw / 2);
 	border-radius: 52px;
 	box-shadow: 0 2px 6px 0 rgba(124, 124, 124, 0.46);
@@ -57,8 +57,8 @@ footer>div:not(:first-child) {
   position: relative;
   top: 4px;
 	vertical-align: bottom;
-	width: calc(28px / 1);
-	height: calc(28px / 1);
+	width: calc(28px / 1.1);
+	height: calc(28px / 1.1);
 }
 
 @media screen and (max-width:1536px) {

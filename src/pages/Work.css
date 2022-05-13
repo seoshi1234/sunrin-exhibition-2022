@@ -6,20 +6,20 @@
 
 .work__section{
   display: grid;    
-  grid-template-columns: repeat(auto-fit,minmax(calc(276px / 1),max-content));
+  grid-template-columns: repeat(auto-fit,minmax(calc(276px / 1.1),max-content));
   grid-gap: 30px;  
   justify-content: center;
-  max-width: 78vw;   
+  max-width: 70vw;   
   margin-top:72px;
-  margin-bottom: calc(185px / 1);
+  margin-bottom: calc(185px / 1.1);
   padding:initial  
 }
 
 .work__menu{
   display: flex;
   justify-content: space-around;
-  margin-top: calc(84px / 1);
-  width: calc(1200px / 1);
+  margin-top: calc(84px / 1.1);
+  width: calc(1200px / 1.1);
 }
 
 .work__menu + div{
@@ -31,9 +31,9 @@
 
 .work__menu-tag{
   font-family: GmarketSans;
-  font-size: calc(17px / 1);
+  font-size: calc(17px / 1.1);
   font-weight: bold;
-  padding :  calc(12px / 1) calc(16px / 1) calc(16px / 1) calc(16px / 1.25);
+  padding :  calc(12px / 1.1) calc(16px / 1.1) calc(16px / 1.1) calc(16px / 1.25);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background-color: #cddafc;

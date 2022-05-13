@@ -58,13 +58,13 @@ b {
 .app_header-box {
   content: '';
   width: 100%;
-  height: calc(96px / 1);
+  height: calc(96px / 1.1);
 }
 
 .app_footer-box {
   content: '';
   width: 100%;
-  height: calc(390px / 1);
+  height: calc(390px / 1.1);
 }
 @media screen and (max-width:1536px) {
   .app_header-box {

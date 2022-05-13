@@ -1,7 +1,7 @@
 header {
   z-index: 100;
   width: 100vw;
-  height: 96px;
+  height: calc(96px / 1.1);
   box-shadow: 0 4px 8px 0 rgba(226, 226, 226, 0.42);
   background-color: #fff;
   display: flex;
@@ -12,8 +12,8 @@ header {
 }
 
 .header__logo {
-  width: 167px;
-  height: 71px;
+  width: calc(167px / 1.1);
+  height: calc(71px / 1.1);
   margin-left: 17.865vw;
   content: url("../assets/HeaderLogo.png");
   object-fit: contain;
@@ -31,7 +31,7 @@ header {
 .header__btns a {
   margin-left: 40px;
   font-family: "GmarketSansBold";
-  font-size: 22px;
+  font-size: calc(22px / 1.1);
   color: #cddafc;
   text-decoration: none;
 }

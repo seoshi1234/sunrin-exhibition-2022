@@ -19,20 +19,20 @@
 }
 
 .contact__image > img{
-  width: calc(692px / 1);
-  height: calc(692px / 1);
+  width: calc(692px / 1.1);
+  height: calc(692px / 1.1);
 }
 
 .contact__title {
   font-family: 'GmarketSans';
-  font-size: calc(50px / 1);
+  font-size: calc(50px / 1.1);
   text-align: center;
   color: #4263f6;
 }
 
 .contact__desc{
   font-family: 'GmarketSans';
-  font-size: calc(26px / 1);
+  font-size: calc(26px / 1.1);
   text-align: center;
   color: #131313;
   
@@ -40,7 +40,7 @@
 
 .contact__desc-accent{
   font-family: 'GmarketSansBold';
-  font-size: calc(32px / 1);
+  font-size: calc(32px / 1.1);
 }
 
 @media screen and (max-width:1536px) {

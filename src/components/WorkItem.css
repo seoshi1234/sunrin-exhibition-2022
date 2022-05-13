@@ -1,12 +1,12 @@
 .work-item{
-  width: calc(276px / 1);
+  width: calc(276px / 1.1);
   display: flex;
   flex-direction: column;  
 }
 
 .work-item__image{
-  width: calc(276px / 1);
-  height: calc(276px / 1);
+  width: calc(276px / 1.1);
+  height: calc(276px / 1.1);
   border-radius: 20px;
   background-position: center;
   background-size: cover;
@@ -16,7 +16,7 @@
 .work-item__title{
   font-family:'NanumBarunGothic';
   font-weight: bold;
-  font-size: calc(20px / 1);
+  font-size: calc(20px / 1.1);
   display: inline-block;
   text-align: center;
   margin-top: 16px;
@@ -27,7 +27,7 @@
 .work-item__author{
   font-family: 'NanumBarunGothic';
   font-weight: bold;
-  font-size: calc(19px / 1);
+  font-size: calc(19px / 1.1);
   display: inline-block;
   text-align: center;
   margin-top: 8px;
