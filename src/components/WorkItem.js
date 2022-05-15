@@ -7,7 +7,7 @@ function WorkItem(props) {
     <div className="work-item">
       <Link to={'/work/' + props.title}><div className="work-item__image" style={{'backgroundImage':`url(${props.thumnail})`}}/></Link>
       <Link to={'/work/' + props.title} className="work-item__title">{props.title}</Link>
-      <Link to={'/work/' + props.author} className="work-item__author">{props.author}</Link>
+      <Link to={'/work/' + props.title} className="work-item__author">{props.author}</Link>
     </div>
   );
 }
