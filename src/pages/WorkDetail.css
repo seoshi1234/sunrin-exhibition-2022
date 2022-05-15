@@ -1,0 +1,66 @@
+.detail{
+  display: flex;
+  justify-content: center;
+}
+
+.detail__content-wrapper{
+  width: 60vw;
+  margin-top: calc(116px / 1.1);
+}
+
+.detail__author-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail__title{
+  font-family: NanumBarunGothic;
+  font-weight: bold;
+  font-size: calc(44px / 1.1);
+  margin-bottom: calc(39px / 1.1);
+}
+
+.detail__author{
+  font-family: NanumBarunGothic;
+  font-weight: bold;
+  font-size: calc(22px / 1.1);
+}
+
+.detail__author-contact{
+  font-family: NanumBarunGothic;
+  font-size: calc(22px / 1.1);
+  margin-top: calc(16px / 1.1);
+}
+
+.detail__author-image{
+  width: calc(160px / 1.1);
+  height: calc(160px / 1.1);
+  margin-left: calc(40px / 1.1);
+  border-radius: 80px;
+}
+
+.detail__work-info{
+  margin-top: calc(80px / 1.1);
+  font-family: NanumBarunGothic;
+  font-size: calc(22px / 1.1);
+  line-height: 1.64em;
+}
+
+.detail__work{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(48px / 1.1);
+  margin-bottom: calc(144px / 1.1);
+}
+
+.detail_work-iframe{
+  border: none;
+  width: 60vw;
+  height: 720px;
+  margin-bottom: calc(80px / 1.1);
+}
+
+.detail__work-image{
+  margin-bottom: calc(80px / 1.1);
+}

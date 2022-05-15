@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
-import SideBar from './SideBar';
+import SideBar from '../pages/SideBar';
 
 
 function Header() {

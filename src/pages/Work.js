@@ -17,26 +17,23 @@ function Work(props) {
       case '3D':
         setData(props.data.filter((d) => d.tag.includes('3D')));
         break;
-      case 'VIDEO':
-        setData(props.data.filter((d) => d.tag.includes('VIDEO')));
-        break;
-      case 'MOTION':
-        setData(props.data.filter((d) => d.tag.includes('MOTION')));
-        break;
-      case 'UI/UX':
-        setData(props.data.filter((d) => d.tag.includes('UI/UX')));
-        break;
-      case 'GRAPHIC':
-        setData(props.data.filter((d) => d.tag.includes('GRAPHIC')));
-        break;
-      case 'BRANDING':
-        setData(props.data.filter((d) => d.tag.includes('BRANDING')));
+      case 'GRAPHIC DESIGN':
+        setData(props.data.filter((d) => d.tag.includes('GRAPHIC DESIGN')));
         break;
       case 'ILLUSTRATION':
         setData(props.data.filter((d) => d.tag.includes('ILLUSTRATION')));
         break;
-      case 'PRODUCT':
-        setData(props.data.filter((d) => d.tag.includes('PRODUCT')));
+      case 'PRODUCT & BRANDING':
+        setData(props.data.filter((d) => d.tag.includes('PRODUCT & BRANDING')));
+        break;
+      case 'VIDEOGRAPHY':
+        setData(props.data.filter((d) => d.tag.includes('VIDEOGRAPHY')));
+        break;
+      case 'UI/UX':
+        setData(props.data.filter((d) => d.tag.includes('UI/UX')));
+        break;
+      case 'ETC':
+        setData(props.data.filter((d) => d.tag.includes('ETC')));
         break;
       default:
         setData(props.data);
@@ -49,29 +46,28 @@ function Work(props) {
       <div className="work__menu">
         <div className={curTag === 'ALL' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('ALL')}>ALL</div>
         <div className={curTag === '3D' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('3D')}>3D</div>
-        <div className={curTag === 'VIDEO' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('VIDEO')}>VIDEO</div>
-        <div className={curTag === 'MOTION' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('MOTION')}>MOTION</div>
-        <div className={curTag === 'UI/UX' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('UI/UX')}>UI/UX</div>
-        <div className={curTag === 'GRAPHIC' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('GRAPHIC')}>GRAPHIC</div>
-        <div className={curTag === 'BRANDING' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('BRANDING')}>BRANDING</div>
+        <div className={curTag === 'GRAPHIC DESIGN' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('GRAPHIC DESIGN')}>GRAPHIC DESIGN</div>
         <div className={curTag === 'ILLUSTRATION' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('ILLUSTRATION')}>ILLUSTRATION</div>
-        <div className={curTag === 'PRODUCT' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('PRODUCT')}>PRODUCT</div>
+        <div className={curTag === 'PRODUCT & BRANDING' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('PRODUCT & BRANDING')}>PRODUCT & BRANDING</div>
+        <div className={curTag === 'UI/UX' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('UI/UX')}>UI/UX</div>
+        <div className={curTag === 'VIDEOGRAPHY' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('VIDEOGRAPHY')}>VIDEOGRAPHY</div>
+        <div className={curTag === 'ETC' ? 'work__menu-tag selected' : 'work__menu-tag'} onClick={() => onChangeTag('ETC')}>ETC</div>
       </div>
       <div /> {/* 태그 및에 있는 라인 */}
       <div className="work__section">
         {
           Object.values(data).map((d,i) =>
-            <WorkItem key={i} imageURL={d.imageURL} title={d.title} author={d.author} />
+            <WorkItem key={i} thumnail={d.thumnail} title={d.title} author={d.author} />
           )
         }
         {
           Object.values(data).map((d,i) =>
-            <WorkItem key={i} imageURL={d.imageURL} title={d.title} author={d.author} />
+            <WorkItem key={i} thumnail={d.thumnail} title={d.title} author={d.author} />
           )
         }
         {
           Object.values(data).map((d,i) =>
-            <WorkItem key={i} imageURL={d.imageURL} title={d.title} author={d.author} />
+            <WorkItem key={i} thumnail={d.thumnail} title={d.title} author={d.author} />
           )
         }
       </div>
