@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sunrin-exhibition-2022/static/css/main.bd5a29fa.css",
-    "main.js": "/sunrin-exhibition-2022/static/js/main.06ca6667.js",
+    "main.js": "/sunrin-exhibition-2022/static/js/main.463a0b95.js",
     "static/js/787.18ed01c5.chunk.js": "/sunrin-exhibition-2022/static/js/787.18ed01c5.chunk.js",
     "static/media/ContactBackground.png": "/sunrin-exhibition-2022/static/media/ContactBackground.2d2a02fa47b5b5e83737.png",
     "static/media/MainImage.png": "/sunrin-exhibition-2022/static/media/MainImage.23109b1c491ef456d4b6.png",
@@ -9,11 +9,11 @@
     "index.html": "/sunrin-exhibition-2022/index.html",
     "static/media/Hamburger.svg": "/sunrin-exhibition-2022/static/media/Hamburger.83697a451f36495d7cfa.svg",
     "main.bd5a29fa.css.map": "/sunrin-exhibition-2022/static/css/main.bd5a29fa.css.map",
-    "main.06ca6667.js.map": "/sunrin-exhibition-2022/static/js/main.06ca6667.js.map",
+    "main.463a0b95.js.map": "/sunrin-exhibition-2022/static/js/main.463a0b95.js.map",
     "787.18ed01c5.chunk.js.map": "/sunrin-exhibition-2022/static/js/787.18ed01c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd5a29fa.css",
-    "static/js/main.06ca6667.js"
+    "static/js/main.463a0b95.js"
   ]
 }
