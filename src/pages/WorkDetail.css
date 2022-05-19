@@ -37,6 +37,8 @@
   height: calc(160px / 1.1);
   margin-left: calc(40px / 1.1);
   border-radius: 80px;
+  background-position: center;
+  background-size: cover;
 }
 
 .detail__work-info{

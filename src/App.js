@@ -7,11 +7,26 @@ import Footer from './components/Footer.js';
 import Contact from './pages/Contact.js';
 import Work from './pages/Work.js';
 import WorkDetail from './pages/WorkDetail';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Profile from './pages/Profile';
 
 
 function App(props) {
+
+  const [workData,setWorkData]=useState([]);
+
+  let loadData = async()=>{    
+    let data = await import('./assets/workData.json')
+    setWorkData(data.data);
+  }
+
+  useEffect(()=>{
+    loadData();
+  },[])
+
+  useEffect(()=>{
+    console.log(workData)
+  },[workData])
 
   return (
     <div className="App">
@@ -20,8 +35,8 @@ function App(props) {
       <Routes>        
         <Route exact path='/' element={<Home />} />
         <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/work' element={<Work data={props.data}/>} />
-        <Route exact path='/work/:title' element={<WorkDetail data={props.data}/>} />
+        <Route exact path='/work' element={<Work data={workData}/>} />
+        <Route exact path='/work/:title' element={<WorkDetail data={workData}/>} />
         <Route exact path='/profile' element={<Profile data={props.profileData}/>}></Route>
       </Routes>
       <div className="app_footer-box" />
