@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './SideBar.css'
 import { Link,useNavigate } from 'react-router-dom'
 import Facebook from '../assets/FooterFacebookIcon.png';
@@ -8,6 +8,10 @@ import Youtube from '../assets/FooterYoutubeIcon.png';
 
 function SideBar(props) {
   const navigate = useNavigate();
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
 
   return (
     <div className={`sidebar ${props.opened?'active':''}`} onClick={props.close}>

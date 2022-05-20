@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from '../assets/MainImage.png';
 import Icon1 from '../assets/HomeWorkIcon.png';
 import Icon2 from '../assets/HomeVideoIcon.png';
@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
   return (
     <div className="home">
       <div> {/* flex 위치 조정 때문에 넣음 */}

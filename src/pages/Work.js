@@ -1,8 +1,13 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import WorkItem from '../components/WorkItem';
 import './Work.css';
 
 function Work(props) {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
 
   const [curTag, setTag] = useState('ALL');
   const [data, setData] = useState(props.data);
@@ -55,16 +60,6 @@ function Work(props) {
       </div>
       <div /> {/* 태그 및에 있는 라인 */}
       <div className="work__section">
-        {
-          Object.values(data).map((d,i) =>
-            <WorkItem key={i} thumnail={d.thumnail} title={d.title} author={d.author} />
-          )
-        }
-        {
-          Object.values(data).map((d,i) =>
-            <WorkItem key={i} thumnail={d.thumnail} title={d.title} author={d.author} />
-          )
-        }
         {
           Object.values(data).map((d,i) =>
             <WorkItem key={i} thumnail={d.thumnail} title={d.title} author={d.author} />
