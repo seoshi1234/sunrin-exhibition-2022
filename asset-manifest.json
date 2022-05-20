@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/sunrin-exhibition-2022/static/css/main.5365921a.css",
-    "main.js": "/sunrin-exhibition-2022/static/js/main.779612ea.js",
-    "static/js/997.c2779d60.chunk.js": "/sunrin-exhibition-2022/static/js/997.c2779d60.chunk.js",
-    "static/js/787.18ed01c5.chunk.js": "/sunrin-exhibition-2022/static/js/787.18ed01c5.chunk.js",
-    "static/media/ContactBackground.png": "/sunrin-exhibition-2022/static/media/ContactBackground.2d2a02fa47b5b5e83737.png",
-    "static/media/MainImage.png": "/sunrin-exhibition-2022/static/media/MainImage.23109b1c491ef456d4b6.png",
-    "static/media/logo.svg": "/sunrin-exhibition-2022/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/sunrin-exhibition-2022/index.html",
-    "static/media/Hamburger.svg": "/sunrin-exhibition-2022/static/media/Hamburger.83697a451f36495d7cfa.svg",
-    "main.5365921a.css.map": "/sunrin-exhibition-2022/static/css/main.5365921a.css.map",
-    "main.779612ea.js.map": "/sunrin-exhibition-2022/static/js/main.779612ea.js.map",
-    "787.18ed01c5.chunk.js.map": "/sunrin-exhibition-2022/static/js/787.18ed01c5.chunk.js.map"
+    "main.css": "/sunrin-exhibition-2022/2022/static/css/main.5334cfce.css",
+    "main.js": "/sunrin-exhibition-2022/2022/static/js/main.46c36751.js",
+    "static/js/997.c2779d60.chunk.js": "/sunrin-exhibition-2022/2022/static/js/997.c2779d60.chunk.js",
+    "static/js/787.18ed01c5.chunk.js": "/sunrin-exhibition-2022/2022/static/js/787.18ed01c5.chunk.js",
+    "static/media/ContactBackground.png": "/sunrin-exhibition-2022/2022/static/media/ContactBackground.2d2a02fa47b5b5e83737.png",
+    "static/media/MainImage.png": "/sunrin-exhibition-2022/2022/static/media/MainImage.23109b1c491ef456d4b6.png",
+    "static/media/logo.svg": "/sunrin-exhibition-2022/2022/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/sunrin-exhibition-2022/2022/index.html",
+    "static/media/Hamburger.svg": "/sunrin-exhibition-2022/2022/static/media/Hamburger.83697a451f36495d7cfa.svg",
+    "main.5334cfce.css.map": "/sunrin-exhibition-2022/2022/static/css/main.5334cfce.css.map",
+    "main.46c36751.js.map": "/sunrin-exhibition-2022/2022/static/js/main.46c36751.js.map",
+    "787.18ed01c5.chunk.js.map": "/sunrin-exhibition-2022/2022/static/js/787.18ed01c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5365921a.css",
-    "static/js/main.779612ea.js"
+    "static/css/main.5334cfce.css",
+    "static/js/main.46c36751.js"
   ]
 }
