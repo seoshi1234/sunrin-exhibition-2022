@@ -37,7 +37,7 @@ const profileInfo = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename='/sunrin-exhibition-2022'>
+    <BrowserRouter basename='/sunrin-exhibition-2022/2022'>
       <App profileData={profileInfo}/>
     </BrowserRouter>
   </React.StrictMode>,
