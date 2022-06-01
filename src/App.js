@@ -28,6 +28,7 @@ function App(props) {
   const storage = getStorage();
   const [workData,setWorkData]=useState([]);
   const [profileData,setProfileData] = useState([]);
+  const [lastTag, setLastTag] = useState('ALL');
 
   let loadData = async()=>{    
     let workData_raw = await import('./assets/workData.json')
@@ -45,6 +46,7 @@ function App(props) {
   useEffect(()=>{
     loadData();
   },[])
+
   
 
   return (
@@ -54,7 +56,7 @@ function App(props) {
       <Routes>        
         <Route exact path='/' element={<Home />} />
         <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/work' element={<Work data={workData}/>} />
+        <Route exact path='/work' element={<Work data={workData} lastTag={lastTag} setLastTag={setLastTag}/>} />
         <Route exact path='/work/:title' element={<WorkDetail data={workData}/>} />
         <Route exact path='/profile' element={<Profile data={profileData}/>}></Route>
       </Routes>

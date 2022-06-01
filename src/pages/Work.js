@@ -4,17 +4,22 @@ import './Work.css';
 
 function Work(props) {
 
+  
+  
+  const [curTag, setTag] = useState('ALL');  
+  const [data, setData] = useState(props.data);
+  
   useEffect(()=>{
     window.scrollTo(0, 0);
+    onChangeTag(props.lastTag);
   },[])
 
-
-  const [curTag, setTag] = useState('ALL');
-  const [data, setData] = useState(props.data);
+  
 
   const onChangeTag = (tag) => {
     setTag(tag);
     filterTag(tag);
+    props.setLastTag(tag);
   };
 
   const filterTag = (curTag) => {
@@ -61,8 +66,12 @@ function Work(props) {
       <div /> {/* 태그 및에 있는 라인 */}
       <div className="work__section">
         {
+
           Object.values(data).map((d,i) =>
-            <WorkItem key={i} thumnail={d.thumnail} title={d.title} author={d.author} />
+            d.thumnail != "" ?
+            <WorkItem key={i} thumnail={d.thumnail} title={d.title} author={d.author} curTag={curTag}/>
+            :
+            <></>
           )
         }
       </div>

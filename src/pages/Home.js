@@ -38,7 +38,7 @@ function Home() {
             <Link to="/work">전시회 작품 보러가기<img src={Icon1} /></Link>
           </div>
           <div className="home__btns">
-            <a href="https://youtube.com">메인 티저 영상 보러가기<img src={Icon2} /></a>
+            <a href="https://www.youtube.com/watch?v=-Bg2ePh3628">메인 티저 영상 보러가기<img src={Icon2} /></a>
           </div>
         </div>
       </div>

@@ -25,16 +25,16 @@ function SideBar(props) {
           <Link to="/contact" className={props.path === '/contact' ? 'active' : ''}>CONTACT</Link>
         </div>
         <div className="sidebar__icons-wrapper">
-          <a className="sidebar__icons" href="">
+          <a className="sidebar__icons" href="https://sunrint.hs.kr/">
             <img src={Sunrin} />
           </a>
-          <a className="sidebar__icons" href="">
+          <a className="sidebar__icons" href="https://www.facebook.com/SunrinGraduationExhibition">
             <img src={Facebook} />
           </a>
-          <a className="sidebar__icons" href="">
+          <a className="sidebar__icons" href="https://www.youtube.com/watch?v=-Bg2ePh3628">
             <img src={Youtube} />
           </a>
-          <a className="sidebar__icons" href="">
+          <a className="sidebar__icons" href="https://www.instagram.com/sr_design_exhibit/">
             <img src={Instagram} />
           </a>
         </div>

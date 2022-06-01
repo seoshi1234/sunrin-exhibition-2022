@@ -65,16 +65,16 @@ function Footer() {
               개발  |  최지원 정진오
             </p>
             <div className="footer__btns-wrapper">
-              <a className="footer__btns" href="">
+              <a className="footer__btns" href="https://sunrint.hs.kr/">
                 <img src={Sunrin} />
               </a>
-              <a className="footer__btns" href="">
+              <a className="footer__btns" href="https://www.facebook.com/SunrinGraduationExhibition">
                 <img src={Facebook} />
               </a>
-              <a className="footer__btns" href="">
+              <a className="footer__btns" href="https://www.youtube.com/watch?v=-Bg2ePh3628">
                 <img src={Youtube} />
               </a>
-              <a className="footer__btns" href="">
+              <a className="footer__btns" href="https://www.instagram.com/sr_design_exhibit/">
                 <img src={Instagram} />
               </a>
             </div>
